@@ -3,3 +3,6 @@ function sum(a: number, b: number): number{
 }
 
 sum(10,20);
+//ts튜플
+let item: [string,number] = ['str',100];
+//길이를 딱 맞춰 줘야함
