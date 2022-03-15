@@ -21,5 +21,11 @@ let obj2: {name:string, age:number}={
 function option(a:string, b?:number){
 
 }
-option('asd',10)
-option('asd')
+option('asd',10);
+option('asd');
+
+let num : any = 123;
+
+function voidFunc(): void{
+    console.log("void");
+}
