@@ -29,3 +29,8 @@ let num : any = 123;
 function voidFunc(): void{
     console.log("void");
 }
+
+type todo = {
+    id:number,
+    name: string
+}
