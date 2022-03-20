@@ -21,3 +21,11 @@ let suma: sumFunc;
 suma = (a:number, b:number):number=>{
     return a+b;
 }
+
+//인터페이스 인덱싱
+interface stringArray{
+    [index:number]:string
+}
+
+const array: stringArray = ['a','b'];
+//array[0] = 10 은 안된다.
