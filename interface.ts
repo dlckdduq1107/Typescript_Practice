@@ -29,3 +29,12 @@ interface stringArray{
 
 const array: stringArray = ['a','b'];
 //array[0] = 10 은 안된다.
+
+//딕셔너리 패턴
+interface strDic{
+    [key:string]: RegExp
+}
+
+const rex: strDic = {
+    cssfile: /\.css$/
+}
