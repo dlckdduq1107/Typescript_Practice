@@ -38,3 +38,18 @@ interface strDic{
 const rex: strDic = {
     cssfile: /\.css$/
 }
+
+//인터페이스 상속
+interface Person{
+    name:string,
+    age:number
+}
+interface Developer extends Person{
+    lan: string
+}
+
+const saram: Developer = {
+    name:'me',
+    age:12,
+    lan:'go'
+}
