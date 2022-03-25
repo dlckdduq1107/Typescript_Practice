@@ -53,3 +53,7 @@ const saram: Developer = {
     age:12,
     lan:'go'
 }
+
+//type alias
+type MyName = string;
+const myname: MyName = 'asd';
