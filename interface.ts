@@ -57,3 +57,19 @@ const saram: Developer = {
 //type alias
 type MyName = string;
 const myname: MyName = 'asd';
+
+//type alias vs interface
+interface Person1{
+    name:string,
+    age: number
+}
+
+type Person2 = {
+    name:string,
+    age:number
+}
+
+const humann:Person1 = {
+    name: 'asd',
+    age: 10
+}
