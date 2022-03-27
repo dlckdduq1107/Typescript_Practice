@@ -73,3 +73,8 @@ const humann:Person1 = {
     name: 'asd',
     age: 10
 }
+
+//union type
+function logMessage(val: string | number):void{
+    console.log(val);
+}
