@@ -76,5 +76,10 @@ const humann:Person1 = {
 
 //union type
 function logMessage(val: string | number):void{
-    console.log(val);
+    if(typeof val === 'number'){
+        val.toString();
+    }
+    if(typeof val === 'string'){
+        val.replace('a','');
+    }
 }
