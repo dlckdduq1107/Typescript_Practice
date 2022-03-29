@@ -83,3 +83,18 @@ function logMessage(val: string | number):void{
         val.replace('a','');
     }
 }
+
+interface Person3{
+    name: string,
+    age: number
+}
+interface Developer1{
+    name: string,
+    skill: string
+}
+
+function askSomeone(someone: Person3 | Developer1){
+    someone.name;
+    // someone.skill;
+    // someone.age;
+}
