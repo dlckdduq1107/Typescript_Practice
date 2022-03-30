@@ -98,3 +98,10 @@ function askSomeone(someone: Person3 | Developer1){
     // someone.skill;
     // someone.age;
 }
+
+//intersection
+function askSomeone2(someone: Person3 & Developer1):void{
+    someone.name
+    someone.age;
+    someone.skill
+}
