@@ -98,6 +98,8 @@ function askSomeone(someone: Person3 | Developer1){
     // someone.skill;
     // someone.age;
 }
+askSomeone({name:'delveloper', skill: 'python'})
+askSomeone({name: 'person', age:12})
 
 //intersection
 function askSomeone2(someone: Person3 & Developer1):void{
