@@ -107,3 +107,4 @@ function askSomeone2(someone: Person3 & Developer1):void{
     someone.age;
     someone.skill
 }
+askSomeone2({name:'meme', skill: 'c', age:12});
