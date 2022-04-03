@@ -108,3 +108,12 @@ function askSomeone2(someone: Person3 & Developer1):void{
     someone.skill
 }
 askSomeone2({name:'meme', skill: 'c', age:12});
+
+//enum
+enum shoes{
+    'nike',
+    'adidas'
+}
+
+let myshoes = shoes.nike;
+console.log(myshoes) // 0
