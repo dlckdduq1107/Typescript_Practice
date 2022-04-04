@@ -111,9 +111,9 @@ askSomeone2({name:'meme', skill: 'c', age:12});
 
 //enum
 enum shoes{
-    'nike',
-    'adidas'
+    nike='나이키',
+    adidas='아디다스'
 }
 
 let myshoes = shoes.nike;
-console.log(myshoes) // 0
+console.log(myshoes) // 나이키
