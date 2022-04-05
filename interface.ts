@@ -117,3 +117,19 @@ enum shoes{
 
 let myshoes = shoes.nike;
 console.log(myshoes) // 나이키
+
+//이넘 활용
+enum Ask{
+    yes ='Y',
+    no = 'N'
+}
+function ask(q: Ask){
+    if( q === Ask.yes){
+        console.log("correct");
+    }
+    if(q === Ask.no){[
+        console.log('no')
+    ]}
+}
+
+ask(Ask.yes)
