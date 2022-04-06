@@ -133,3 +133,9 @@ function ask(q: Ask){
 }
 
 ask(Ask.yes)
+
+class PersonClass{
+    constructor(name,age){
+        console.log(name,age)
+    }
+}
