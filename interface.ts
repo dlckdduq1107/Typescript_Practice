@@ -139,3 +139,9 @@ class PersonClass{
         console.log(name,age)
     }
 }
+
+//prototype
+let u = {name:'asd', age:10};
+let admin = {};
+admin.__proto__ = u;
+console.log(admin.name);
