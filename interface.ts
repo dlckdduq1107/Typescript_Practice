@@ -142,6 +142,22 @@ class PersonClass{
 
 //prototype
 let u = {name:'asd', age:10};
-let admin = {};
+let admin: {} = {};
 admin.__proto__ = u;
 console.log(admin.name);
+
+//생성자,  프로토 타입
+function human(name:string,age:number){
+    this.name = name;
+    this.age = age;
+}
+let h = new human('name',100);
+
+class human1{
+    name;
+    age;
+    constructor(name:string,age:number){
+        this.name = name;
+        this.age = age;
+    }
+}
