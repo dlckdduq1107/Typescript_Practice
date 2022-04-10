@@ -154,8 +154,10 @@ function human(name:string,age:number){
 let h = new human('name',100);
 
 class human1{
-    name;
-    age;
+    public name:string;
+    private age:number;
+    readonly skill:string;
+    
     constructor(name:string,age:number){
         this.name = name;
         this.age = age;
