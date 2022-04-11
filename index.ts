@@ -34,3 +34,8 @@ type todo = {
     id:number,
     name: string
 }
+
+interface Todo{
+    id:number,
+    name:string
+}
