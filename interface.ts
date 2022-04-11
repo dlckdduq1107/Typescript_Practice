@@ -157,9 +157,17 @@ class human1{
     public name:string;
     private age:number;
     readonly skill:string;
-    
+
     constructor(name:string,age:number){
         this.name = name;
         this.age = age;
     }
 }
+
+//제네릭은 재사용성을 위해 쓰인다.
+//제너릭은 타입을 미리지정하지 않고 선언 시점에 타입을 정의하겠다는 의미이다.
+function logText<T>(text: T):T{
+    console.log(text);
+    return text;
+}
+logText<string>('hi');// <> 를 이용해 제네릭 타입을 명시해주는 것이 좋다.
