@@ -171,3 +171,15 @@ function logText<T>(text: T):T{
     return text;
 }
 logText<string>('hi');// <> 를 이용해 제네릭 타입을 명시해주는 것이 좋다.
+
+//기존 타입 미리 지정할떄의 문제점
+function logText2(text:string){
+    console.log(text);
+    return text;
+}
+function logNumber(num:number){
+    console.log(num);
+    return num;
+}
+logText('hi');
+logNumber(12);
