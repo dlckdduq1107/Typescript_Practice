@@ -183,3 +183,10 @@ function logNumber(num:number){
 }
 logText('hi');
 logNumber(12);
+
+//중복 타입 문제 해결을 위해 유니온을 써보자
+//이렇게 하면 중복은 줄일 수 있지만 함수 내부에서 text. 하고 메서드를 사용할떄 string과 number의 공통적인 메서드만 표시가 된다.
+function logTextUnion(text:string | number){
+    console.log(text);
+    return text;
+}
