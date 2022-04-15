@@ -190,3 +190,7 @@ function logTextUnion(text:string | number){
     console.log(text);
     return text;
 }
+
+let gena = logText<string>('hi');
+gena.split("")
+let bool = logText<boolean>(true);
