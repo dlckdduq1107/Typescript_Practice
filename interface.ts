@@ -194,3 +194,23 @@ function logTextUnion(text:string | number){
 let gena = logText<string>('hi');
 gena.split("")
 let bool = logText<boolean>(true);
+
+const emails: {value:string, selected: boolean}[] = [
+    {value:'asds', selected: true},
+    {value:'bbbb', selected: false}
+]
+
+const numProduct: {value: number, selected: boolean}[] = [
+    {value:1, selected: true},
+    {value:2, selected: false}
+]
+
+function createDropdown(item:{value: string, selected:boolean}){
+    const option = document.createElement('option');
+    option.value = item.value;
+    return option;
+}
+emails.forEach((email)=>{
+    const dropDown = createDropdown(email);
+    
+})
