@@ -195,22 +195,30 @@ let gena = logText<string>('hi');
 gena.split("")
 let bool = logText<boolean>(true);
 
-const emails: {value:string, selected: boolean}[] = [
+interface Email {
+    value: string;
+    selected : boolean;
+}
+const emails: Email[] = [
     {value:'asds', selected: true},
     {value:'bbbb', selected: false}
 ]
 
-const numProduct: {value: number, selected: boolean}[] = [
+interface Product{
+    value: number;
+    selected: boolean;
+}
+const numProduct: Product[] = [
     {value:1, selected: true},
     {value:2, selected: false}
 ]
 
-function createDropdown(item:{value: string, selected:boolean}){
+function createDropdown(item:Email | Product){
     const option = document.createElement('option');
-    option.value = item.value;
+    option.value = item.value.toString();
     return option;
 }
 emails.forEach((email)=>{
     const dropDown = createDropdown(email);
-    
+
 })
