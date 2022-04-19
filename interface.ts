@@ -222,3 +222,10 @@ emails.forEach((email)=>{
     const dropDown = createDropdown(email);
 
 })
+
+//인터페이스에 제니릭 선언
+interface Drop<T>{
+    value: T;
+    selected: boolean;
+}
+const obj3:Drop<string> = {value:"Asd", selected: true}
