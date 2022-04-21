@@ -218,13 +218,13 @@ const numProduct: DropDownItem<number>[] = [
     {value:2, selected: false}
 ]
 
-function createDropdown(item:DropDownItem<string> | DropDownItem<number>){
+function createDropdown<T>(item:DropDownItem<T>){
     const option = document.createElement('option');
     option.value = item.value.toString();
     return option;
 }
 emails.forEach((email)=>{
-    const dropDown = createDropdown(email);
+    const dropDown = createDropdown<string>(email);
 
 })
 
