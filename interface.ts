@@ -234,3 +234,10 @@ interface Drop<T>{
     selected: boolean;
 }
 const obj3:Drop<string> = {value:"Asd", selected: true}
+
+//제네릭 타입 제한
+function logTextPrint<T>(text:T[]):T[]{
+    text.length;
+    return text;
+}
+logTextPrint(["hi"])
