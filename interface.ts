@@ -236,8 +236,12 @@ interface Drop<T>{
 const obj3:Drop<string> = {value:"Asd", selected: true}
 
 //제네릭 타입 제한
-function logTextPrint<T>(text:T[]):T[]{
+interface LengType{
+    length: number
+}
+function logTextPrint<T extends LengType>(text:T):T{
     text.length;
     return text;
 }
-logTextPrint(["hi"])
+logTextPrint("hi")
+logTextPrint(10)
