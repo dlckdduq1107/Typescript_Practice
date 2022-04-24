@@ -244,4 +244,15 @@ function logTextPrint<T extends LengType>(text:T):T{
     return text;
 }
 logTextPrint("hi")
-logTextPrint(10)
+// logTextPrint(10)
+
+//제네릭 타입제한3 - keyof 를 통한 타입제한
+interface Shopping{
+    name: string;
+    val : number;
+    price: number;
+}
+function buyProduct<T extends keyof Shopping>(item:T):T{
+    return item
+}
+buyProduct('name')
