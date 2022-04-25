@@ -256,3 +256,11 @@ function buyProduct<T extends keyof Shopping>(item:T):T{
     return item
 }
 buyProduct('name')
+
+//fetch api에서 제네릭 사용하기
+function fetchitems():Promise<string[]>{
+    let items : string[]= ['a','b'];
+    return new Promise((resolve) => {
+        resolve(items);
+    })
+}
