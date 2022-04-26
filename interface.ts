@@ -147,8 +147,8 @@ let admin: {} = {};
 // console.log(admin.name);
 
 //생성자,  프로토 타입
-function human(name:string,age:number){
-    this.name = name;
+function human(this: any, name:string,age:number){
+    this.name= name;
     this.age = age;
 }
 // let h = new human('name',100);
@@ -158,9 +158,10 @@ class human1{
     private age:number;
     readonly skill:string;
 
-    constructor(name:string,age:number){
+    constructor(name:string,age:number, skill:string){
         this.name = name;
         this.age = age;
+        this.skill = skill;
     }
 }
 
@@ -220,7 +221,7 @@ const numProduct: DropDownItem<number>[] = [
 
 function createDropdown<T>(item:DropDownItem<T>){
     const option = document.createElement('option');
-    option.value = item.value.toString();
+    console.log(item.value);
     return option;
 }
 emails.forEach((email)=>{
@@ -258,9 +259,9 @@ function buyProduct<T extends keyof Shopping>(item:T):T{
 buyProduct('name')
 
 //fetch api에서 제네릭 사용하기
-function fetchitems():Promise<string[]>{
-    let items : string[]= ['a','b'];
-    return new Promise((resolve) => {
-        resolve(items);
-    })
-}
+// function fetchitems():Promise<string[]>{
+//     let items : string[]= ['a','b'];
+//     return new Promise((resolve) => {
+//         resolve(items);
+//     })
+// }
