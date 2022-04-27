@@ -265,3 +265,20 @@ buyProduct('name')
 //         resolve(items);
 //     })
 // }
+
+//enum을 통한 타입 제한
+enum PhoneType{
+    Home='home',
+    Office='office'
+}
+const phone1 : {home:string}= {
+    home:'mymy'
+}
+const phone2:{office:string} = {
+    office:'myoffice'
+}
+function findPhone(phone:PhoneType): void{
+    const arr = [phone1,phone2];
+    console.log(phone)
+}
+findPhone(PhoneType.Home)
