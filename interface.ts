@@ -282,3 +282,7 @@ function findPhone(phone:PhoneType): void{
     console.log(phone)
 }
 findPhone(PhoneType.Home)
+
+//타입 추론
+let aa = 19
+let abc:number;
