@@ -286,3 +286,8 @@ findPhone(PhoneType.Home)
 //타입 추론
 let aa = 19
 let abc:number;
+
+function temp(b=10){
+    let s = 'asd';
+    return s+b
+}
