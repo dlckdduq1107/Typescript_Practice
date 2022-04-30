@@ -291,3 +291,12 @@ function temp(b=10){
     let s = 'asd';
     return s+b
 }
+
+interface ShoppingType<T>{
+    value: T
+    cost:number
+}
+let sh:ShoppingType<string> = {
+    value : 'as',
+    cost: 100
+}
