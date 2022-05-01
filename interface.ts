@@ -296,7 +296,18 @@ interface ShoppingType<T>{
     value: T
     cost:number
 }
+interface DetailShopping<K> extends ShoppingType<K>{
+    description: string
+    tag: K
+}
 let sh:ShoppingType<string> = {
     value : 'as',
+    cost: 100
+}
+
+let detail:DetailShopping<string> = {
+    description: 'asd',
+    tag: 'tag',
+    value:'value',
     cost: 100
 }
