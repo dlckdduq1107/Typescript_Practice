@@ -311,3 +311,6 @@ let detail:DetailShopping<string> = {
     value:'value',
     cost: 100
 }
+
+//best common type
+let arr = [1,2,true];
