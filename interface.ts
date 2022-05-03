@@ -314,3 +314,9 @@ let detail:DetailShopping<string> = {
 
 //best common type
 let arr = [1,2,true];
+
+//타입 단언(type assertion)
+let asse;
+asse = 10
+asse = 'a'
+let b = asse as string
