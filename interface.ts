@@ -320,3 +320,11 @@ let asse;
 asse = 10
 asse = 'a'
 let b = asse as string
+
+let dom = document.querySelector('div');
+if(dom){
+    dom.innerHTML = 'asd';
+}
+
+let div = document.querySelector('div') as HTMLDivElement
+div.innerHTML = 'asd';
