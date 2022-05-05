@@ -328,3 +328,25 @@ if(dom){
 
 let div = document.querySelector('div') as HTMLDivElement
 div.innerHTML = 'asd';
+
+//타입가드
+interface Develop{
+    name:string
+    skill:string
+}
+interface People{
+    name:string
+    lan:string
+}
+function reobj(): Develop | People{
+    return {name:'tony', skill: 'java', lan:'kr'}
+}
+let tony = reobj();
+// console.log(tony.skill) //이렇게 쓰면 유니온 이기 때문에 공통적인 것만 불러올수 있어 에러남
+
+//타입가드가 없으면 이렇게 가독성이 떨어지게 작성해야 한다.
+if((tony as Develop).skill){
+    (tony as Develop).skill
+}else if((tony as People).lan){
+    (tony as People).lan
+}
