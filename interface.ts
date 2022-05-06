@@ -350,3 +350,13 @@ if((tony as Develop).skill){
 }else if((tony as People).lan){
     (tony as People).lan
 }
+
+//타입 가드 적용
+function isDevelop(target: Develop | People): target is Develop{
+    return (target as Develop).skill !== undefined
+}
+if(isDevelop(tony)){
+    tony.skill
+}else{
+    tony.lan
+}
