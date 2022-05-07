@@ -360,3 +360,17 @@ if(isDevelop(tony)){
 }else{
     tony.lan
 }
+
+//타입 호환
+interface del{
+    name:string
+    skill: string
+}
+interface peo{
+    name:string
+}
+
+let devel:del;
+let peopl:peo;
+// devel = peopl//오른쪽 구조가 더 커야 할당 할 수 있다.
+peopl = devel;
