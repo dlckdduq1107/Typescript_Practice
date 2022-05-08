@@ -373,4 +373,26 @@ interface peo{
 let devel:del;
 let peopl:peo;
 // devel = peopl//오른쪽 구조가 더 커야 할당 할 수 있다.
-peopl = devel;
+// peopl = devel;
+
+let add = function(a:number){
+    //...
+}
+let sum2 = function(a:number, b:number){
+    //...
+}
+sum2 = add;
+
+interface Empty<T>{
+    //...
+}
+let empty1:Empty<string>
+let empty2:Empty<number>
+empty1 = empty2
+
+interface NotEmpty<T>{
+    name: T
+}
+let notEmpty1: NotEmpty<string>;
+let notEmpty2: NotEmpty<number>
+notEmpty1 =notEmpty2
