@@ -25,3 +25,27 @@ type omittype = Omit<Product,'brand'|'price'>
 function updatepartial(updateItem: Partial<Product>){
 
 }
+
+//Partial 구현
+//#1
+// type productUpdate = {
+//     id?:Product['id']
+//     name?:Product['name']
+//     price?:Product['price']
+//     brand?:Product['brand']
+// }
+
+//#2 - mapped type use
+// type productUpdate = {
+//     [p in 'id'|'name'|'price'|'brand']?: Product[p]
+// }
+
+//#3 - use keyof
+type productUpdate = {
+    [p in keyof Product]?: Product[p]
+}
+
+//#4
+type PartialCopy<T> = {
+    [p in keyof T]?: T[p]
+}
