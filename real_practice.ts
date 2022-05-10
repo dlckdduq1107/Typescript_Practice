@@ -20,3 +20,8 @@ interface ProductDetail{
 }
 type detail = Pick<Product,'id'|'name'>
 type omittype = Omit<Product,'brand'|'price'>
+
+//상품의 일부분을 업데이트 하는 함수
+function updatepartial(updateItem: Partial<Product>){
+
+}
