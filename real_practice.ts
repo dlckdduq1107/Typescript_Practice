@@ -19,3 +19,4 @@ interface ProductDetail{
     name: string
 }
 type detail = Pick<Product,'id'|'name'>
+type omittype = Omit<Product,'brand'|'price'>
