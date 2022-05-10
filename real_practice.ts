@@ -49,3 +49,12 @@ type productUpdate = {
 type PartialCopy<T> = {
     [p in keyof T]?: T[p]
 }
+
+//mapped type
+type Heros = 'hulk'|'captain'|'thor';
+type HerosAge = { [p in Heros]: number}
+let ages: HerosAge = {
+    hulk: 33,
+    captain: 100,
+    thor : 1000
+}
